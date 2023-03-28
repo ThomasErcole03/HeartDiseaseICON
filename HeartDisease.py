@@ -37,7 +37,7 @@ kf = KFold(n_splits=10, shuffle=True, random_state= 0)
 # Classificatori per la valutazione
 knn = KNeighborsClassifier(weights="distance")
 dtc = DecisionTreeClassifier(random_state=0)
-rfc = RandomForestClassifier(random_state=0,max_depth=5)
+rfc = RandomForestClassifier(random_state=0,max_depth=3)
 histg= HistGradientBoostingClassifier(random_state=0)
 adaboost= AdaBoostClassifier(random_state=0,learning_rate=0.8)
 svc = SVC(random_state=0)
